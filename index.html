@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Rodriguez</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="titlePage">SOLVING BEAM PROBLEMS</div>
+    <div class="kind">
+        <div class="kindBeam" onclick="simply()">
+            <p>Simply Supported Beam</p>
+            <div id="idSimply">
+                <svg viewBox="0 10 200 70">
+                    <rect x="20" y="29.5" width="160" height="5" stroke="black" stroke-width="1" fill="var(--beamColor)" />
+                    <polygon points="10,50 15,50 20,40 25,50 30,50" stroke="black" fill="white" />
+                    <circle cx="180" cy="45" r="5" stroke="black" fill="white" />
+                    <polygon points="170,50 190,50" stroke="black" fill="white" />
+                </svg>
+            </div>
+        </div>
+        <div class="kindBeam" onclick="cantilever()">
+            <p>Cantileves Beam</p>
+            <div id="idCantilever">
+                <svg viewBox="0 10 200 70">
+                    <rect x="20" y="29.5" width="160" height="10" stroke="black" stroke-width="1" fill="var(--beamColor)" />
+                    <polygon points="20,0 20,50" stroke="black" fill="white" />
+                </svg>
+            </div>
+        </div>
+        <div class="kindBeam" onclick="continuous()">
+            <p>Continuous Beam</p>            
+            <div id="idContinuous">
+                <svg viewBox="0 10 200 70">
+                    <rect x="20" y="29.5" width="160" height="10" stroke="black" stroke-width="1" fill="var(--beamColor)" />
+                    <polygon points="10,50 15,50 20,40 25,50 30,50" stroke="black" fill="white" />
+                    <polygon points="90,50 95,50 100,40 105,50 110,50" stroke="black" fill="white" />
+                    <polygon points="170,50 175,50 180,40 185,50 190,50" stroke="black" fill="white" />
+                </svg>
+            </div>
+        </div>
+        <div class="kindBeam" onclick="fixed()">
+            <p>Fixed Beam</p>            
+            <div id="idFixed">
+                <svg viewBox="0 10 200 70">
+                    <rect x="20" y="29.5" width="160" height="10" stroke="black" stroke-width="1" fill="var(--beamColor)" />
+                    <polygon points="20,0 20,50" stroke="black" fill="white" />
+                    <polygon points="180,0 180,50" stroke="black" fill="white" />
+                </svg>
+            </div>
+        </div>
+        <div class="kindBeam" onclick="overhanging()">
+            <p>Overhanging Beam</p>
+            <div id="idOverhanging">
+                <svg viewBox="0 10 200 70">
+                    <rect x="20" y="29.5" width="160" height="10" stroke="black" stroke-width="1" fill="var(--beamColor)" />
+                    <polygon points="10,50 15,50 20,40 25,50 30,50" stroke="black" fill="white" />
+                    <polygon points="90,50 95,50 100,40 105,50 110,50" stroke="black" fill="white" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="problem">
+        <div id="idProblem"></div>
+        <div id="idSFD"></div>
+        <div id="idBMD"></div>
+    </div>
+    <footer> ©2022 Ivan Rodriguez </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

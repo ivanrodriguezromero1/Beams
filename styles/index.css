@@ -1,0 +1,50 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --beamColor:rgb(105, 157, 200);
+}
+.titlePage{
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+    font-style: italic;
+    font-size: 30px;
+    text-decoration: underline;
+    color: rgb(46, 121, 124);
+    text-shadow:2px 2px 2px rgb(20, 57, 58);
+    padding: 20px;
+}
+.kind{ 
+    display: flex;
+    padding: 10px;
+}
+.kindBeam{
+    cursor: pointer;
+    text-align: center;
+    width: 20%;
+    height: 120px;
+    background-color: rgba(236, 252, 252, 0.836);
+    border: 1px solid rgb(86, 86, 86);
+    border-radius: 5px;
+    padding: 10px;
+}
+.kindBeam:hover{
+    background-color: rgba(174, 185, 185, 0.836);
+    margin-top: -5px;
+}
+.problem{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+#idProblem,#idSFD,#idBMD{
+    /* margin-top: 1%; */
+    width: 40%;
+}
+footer{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
